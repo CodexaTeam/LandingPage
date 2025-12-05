@@ -896,4 +896,179 @@ nav {
   }
 }
 
+/* ================= TEAM SECTION ================= */
+.team {
+  background-color: var(--extra-light);
+  padding: 5rem 0;
+}
 
+.team__container .section__description {
+  max-width: 650px;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+}
+
+.team__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.team__card {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+.team__avatar {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--primary-color);
+}
+
+.team__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team__name {
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.team__role {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--primary-color-dark);
+}
+
+.team__bio {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.5rem;
+}
+
+/* ============== PROJECT ABOUT SECTION ============== */
+.project {
+  background-color: var(--white);
+  padding: 5rem 0 5rem;
+}
+
+.project__container .section__description {
+  max-width: 650px;
+  margin-inline: auto;
+  margin-bottom: 3.5rem;
+}
+
+.project__grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .project__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project__card {
+  background-color: var(--extra-light);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem 3rem;
+  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.project__title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.project__text {
+  font-size: 0.96rem;
+  line-height: 1.6rem;
+  color: var(--text-light);
+}
+
+.project__media {
+  width: 100%;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.project__media img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.project__link {
+  margin-top: 0.8rem;
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.75rem 1.8rem;
+  border-radius: 999px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.project__link:hover {
+  background-color: var(--primary-color-dark);
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+
+/* BOTÓN CENTRADO */
+.about__link {
+  margin-top: 0.8rem;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.8rem;
+  border-radius: 999px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+              box-shadow 0.3s ease;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about__link:hover {
+  background-color: var(--primary-color-dark);
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.18);
+}
